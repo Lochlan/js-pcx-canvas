@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>js-pcx-canvas</title>
+    <meta name="description" content="View and modify PCX files with JavaScript and the HTML canvas">
+
+    <link href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Open+Sans:700,300,600,400" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="title">js-pcx-canvas</h1>
+
+        <p class="subtitle"><em>View and modify PCX files with JavaScript and the HTML canvas</em></p>
+    </header>
+
+
+    <section data-backbone="main">
+        <form data-backbone="fileLoader">
+            <input
+                name="file"
+                type="file"
+            >
+        </form>
+
+        <canvas data-backbone="canvas"></canvas>
+    </section>
+
+    <footer class="footer">
+        <hr>
+        Copyright © 2015 <a href="mailto:info@lochlanmcintosh.com">Lochlan McIntosh</a>.  <a href="https://github.com/Lochlan/js-pcx-canvas">Source code on github.</a>
+    </footer>
+
+    <script
+        data-main="static/js/main"
+        src="static/js/vendor/require.js"
+    ></script>
+</body>
+</html>

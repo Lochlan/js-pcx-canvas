@@ -1,0 +1,49 @@
+
+.title {
+    font-size: 72px;
+    margin: 20px 0 10px 0;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.nav {
+    background: black;
+    border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 0.5em;
+
+    > li {
+        display: inline-block;
+
+        > a {
+            color: white;
+            display: inline-block;
+            padding: 0.5em 1em;
+            text-decoration: none;
+
+            &:hover {
+                color: red;
+
+                &::before {
+                    content: '➻';
+                    margin-left: -1em;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    margin: 40px 0;
+}
+
+.footer {
+    font-size: 14px;
+}
